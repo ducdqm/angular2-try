@@ -9,17 +9,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var AppComponent = (function () {
     function AppComponent() {
-        this.title = "Main Component 1";
-        //property binding
-        this.image = 'http://lorempixel.com/100/100';
-        this.welcometext = 'welcome to ganular';
     }
     return AppComponent;
 }());
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "\n  <h1>Hello {{title}}</h1>\n  <img  src='http://lorempixel.com/100/100' />\n  <img [src]='image' />\n  <my-tutorial></my-tutorial>\n  <input type=\"text\" [value]=\"welcometext\"/>",
+        template: "\n  <h1>Hello TEDU Online 22!</h1>\n  <h4>app main component</h4>\n  <my-tutorial></my-tutorial>",
         styles: ['h4 {color:blue;}']
     })
 ], AppComponent);

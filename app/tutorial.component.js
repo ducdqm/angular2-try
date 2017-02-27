@@ -15,7 +15,7 @@ var TutorialComponent = (function () {
 TutorialComponent = __decorate([
     core_1.Component({
         selector: 'my-tutorial',
-        template: "\n    <h2>Tutorial Component</h2>\n    ",
+        template: "\n    <h2>This is my test from Duc (new)</h2>\n    <h4>sub tutorial component</h4>\n    ",
         styles: ['h4 {color:red;}']
     })
 ], TutorialComponent);
