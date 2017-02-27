@@ -9,16 +9,17 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var TutorialComponent = (function () {
     function TutorialComponent() {
-        this.applyClass = true;
-        this.yellowColor = true;
+        this.title = 'This is lesson 9';
     }
+    TutorialComponent.prototype.OnClick = function (value) {
+        console.log(value);
+    };
     return TutorialComponent;
 }());
 TutorialComponent = __decorate([
     core_1.Component({
         selector: 'my-tutorial',
-        template: "\n    <h2>Tutorial Component</h2>\n    <h3 [class.greenColor]=\"applyClass\">apply style class</h3>\n    <h4 [style.color]=\"yellowColor?'yellow':'orange'\">Apply Style</h4>\n    ",
-        styles: [" \n        h2 {color: purple}       \n        .greenColor {\n            color:green;\n        }\n        "]
+        template: "\n    <h2>{{title}}</h2>\n    <button (click)=\"OnClick(name.value)\">Click me</button>\n    <button (click)=\"OnClick($event)\">Click me</button>\n    <input type=\"text\" #name />\n    ",
     })
 ], TutorialComponent);
 exports.TutorialComponent = TutorialComponent;
