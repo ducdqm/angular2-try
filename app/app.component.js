@@ -15,7 +15,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "\n  <h1>Hello TEDU Online 22!</h1>\n  <h4>app main component</h4>\n  <my-tutorial></my-tutorial>",
+        template: "\n  <h1>app component</h1>\n  <my-tutorial></my-tutorial>",
         styles: ['h4 {color:blue;}']
     })
 ], AppComponent);

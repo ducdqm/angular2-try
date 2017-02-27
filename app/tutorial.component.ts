@@ -3,8 +3,18 @@ import {Component} from '@angular/core';
 @Component({
     selector:'my-tutorial',
     template:`
-    <h2>This is my test from Duc (new)</h2>
+    <h2>Tutorial Component</h2>
+    <h3 [class.greenColor]="applyClass">apply style class</h3>
+    <h4 [style.color]="yellowColor?'yellow':'orange'">Apply Style</h4>
     `,
-    styles:['h4 {color:red;}']
+    styles:[` 
+        h2 {color: purple}       
+        .greenColor {
+            color:green;
+        }
+        `]
 })
-export class TutorialComponent{ }
+export class TutorialComponent{ 
+    public applyClass = true;
+    public yellowColor = true;
+}
